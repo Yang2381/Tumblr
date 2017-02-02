@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2161F01E43F7D9002C5064 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2161EF1E43F7D9002C5064 /* PictureViewController.swift */; };
 		B0B4E58E9774412171B9F4C7 /* Pods_Tumblr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0E8897B58152FDB94CE8B6 /* Pods_Tumblr.framework */; };
 		EBEAF49A1E43F4CE0064FBA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEAF4991E43F4CE0064FBA3 /* AppDelegate.swift */; };
-		EBEAF49C1E43F4CE0064FBA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEAF49B1E43F4CE0064FBA3 /* ViewController.swift */; };
 		EBEAF49F1E43F4CE0064FBA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBEAF49D1E43F4CE0064FBA3 /* Main.storyboard */; };
 		EBEAF4A11E43F4CE0064FBA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBEAF4A01E43F4CE0064FBA3 /* Assets.xcassets */; };
 		EBEAF4A41E43F4CE0064FBA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBEAF4A21E43F4CE0064FBA3 /* LaunchScreen.storyboard */; };
@@ -17,11 +17,11 @@
 
 /* Begin PBXFileReference section */
 		226BE68DDF07A04E6836BE3F /* Pods-Tumblr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tumblr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tumblr/Pods-Tumblr.release.xcconfig"; sourceTree = "<group>"; };
+		3F2161EF1E43F7D9002C5064 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		B7ADC0777FC3E97D001029C6 /* Pods-Tumblr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tumblr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tumblr/Pods-Tumblr.debug.xcconfig"; sourceTree = "<group>"; };
 		DE0E8897B58152FDB94CE8B6 /* Pods_Tumblr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tumblr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEAF4961E43F4CE0064FBA3 /* Tumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEAF4991E43F4CE0064FBA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBEAF49B1E43F4CE0064FBA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBEAF49E1E43F4CE0064FBA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBEAF4A01E43F4CE0064FBA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBEAF4A31E43F4CE0064FBA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +57,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3F2161F11E43F7DF002C5064 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F2161EF1E43F7D9002C5064 /* PictureViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
 		EBEAF48D1E43F4CD0064FBA3 = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +86,8 @@
 		EBEAF4981E43F4CE0064FBA3 /* Tumblr */ = {
 			isa = PBXGroup;
 			children = (
+				3F2161F11E43F7DF002C5064 /* View Controller */,
 				EBEAF4991E43F4CE0064FBA3 /* AppDelegate.swift */,
-				EBEAF49B1E43F4CE0064FBA3 /* ViewController.swift */,
 				EBEAF49D1E43F4CE0064FBA3 /* Main.storyboard */,
 				EBEAF4A01E43F4CE0064FBA3 /* Assets.xcassets */,
 				EBEAF4A21E43F4CE0064FBA3 /* LaunchScreen.storyboard */,
@@ -211,8 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBEAF49C1E43F4CE0064FBA3 /* ViewController.swift in Sources */,
 				EBEAF49A1E43F4CE0064FBA3 /* AppDelegate.swift in Sources */,
+				3F2161F01E43F7D9002C5064 /* PictureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +382,7 @@
 				EBEAF4AA1E43F4CE0064FBA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
