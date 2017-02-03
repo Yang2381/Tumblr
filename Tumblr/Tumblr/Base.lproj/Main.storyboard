@@ -29,21 +29,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IBJ-6U-OC9">
-                                                    <rect key="frame" x="8" y="0.0" width="359" height="39"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="MC3-Dd-8oh">
-                                                    <rect key="frame" x="8" y="38" width="348" height="229"/>
+                                                    <rect key="frame" x="0.0" y="38" width="375" height="229"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="Label_Cell" destination="IBJ-6U-OC9" id="riO-rj-Xhk"/>
                                             <outlet property="Pictures_View" destination="MC3-Dd-8oh" id="TB5-ll-Lhs"/>
                                         </connections>
                                     </tableViewCell>
