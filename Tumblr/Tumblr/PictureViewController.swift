@@ -2,7 +2,7 @@
 //  PictureViewController.swift
 //  Tumblr
 //
-//  Created by Yawen on 2/2/2017.
+//  Created by Yawen & Szu Kai Yang on 2/2/2017.
 //  Copyright © 2017 YangSzu Kai. All rights reserved.
 //
 
@@ -75,15 +75,26 @@ class PictureViewController: UIViewController, UITableViewDataSource, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell") as! Cell_ContollerTableViewCell
         
         let post = posts?[indexPath.row]
+        
+        if let title_blog = post?.value(forKeyPath: "blog_name") as? String{
+            cell.PicTitle.text = title_blog
+        }
+        
+        
         if let photos = post?.value(forKeyPath: "photos") as? [NSDictionary]
         {
             let imageURLstring = photos[0].value(forKeyPath: "original_size.url") as? String
+            
+            let username = post?.value(forKeyPath: "blog_name") as! String
+            if let avartarURL = URL(string: "https://api.tumblr.com/v2/blog/\(username).tumblr.com/avatar/512"){
+                cell.Avartar.setImageWith(avartarURL)
+                cell.Avartar.layer.cornerRadius = 30
+                cell.Avartar.clipsToBounds = true
+            }
+            
             if let imageURL = URL(string: imageURLstring!){
             cell.Pictures_View.setImageWith(imageURL)
-            }else{
             }
-        }else{
-            
         }
         
         return cell
