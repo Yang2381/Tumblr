@@ -8,12 +8,16 @@
 
 import UIKit
 
+
 class Cell_ContollerTableViewCell: UITableViewCell {
 
     @IBOutlet weak var Label_Cell: UILabel!
     
+    @IBOutlet weak var Pictures_View: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+     
         // Initialization code
     }
 
