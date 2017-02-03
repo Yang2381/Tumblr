@@ -9,7 +9,9 @@ Time spent: **2** hours spent in total
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
+<img src='http://i.imgur.com/1VdH3aY.gifv' title= 'Tumblr Walkthrough' width ='' alt='Video Walkthrough'/>
 
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## License
 
