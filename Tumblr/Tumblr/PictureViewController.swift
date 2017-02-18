@@ -199,6 +199,7 @@ class PictureViewController: UIViewController, UITableViewDataSource, UITableVie
                     }
                 }
          });
+        
         task.resume()
 
         
